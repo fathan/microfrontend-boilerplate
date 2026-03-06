@@ -1,0 +1,43 @@
+{
+  "name": "host-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Fathan Rohman",
+    "email": "karir.fathan@gmail.com",
+    "url": "https://fathanrohman.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:host": "npm --prefix apps/host run dev",
+    "dev:dashboard": "npm --prefix apps/react-dashboard run dev",
+    "dev:products": "npm --prefix apps/vue-products run dev",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.1",
+    "vue": "^3.5.29"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@originjs/vite-plugin-federation": "^1.4.1",
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "tailwindcss": "^4.2.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vite": "^7.3.1"
+  }
+}

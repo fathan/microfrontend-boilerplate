@@ -6,6 +6,6 @@
 
     <br>
 
-    <router-link to="/users">List User</router-link>
+    <router-link to="/">List User</router-link>
   </div>
 </template>

@@ -18,6 +18,10 @@ export default function RemoteWrapper({ loader, name, basePath }: RemoteWrapperP
   const basePathRef = useRef(basePath);
 
   useEffect(() => {
+    basePathRef.current = basePath;
+  }, [basePath]);
+
+  useEffect(() => {
     let cancelled = false;
 
     loaderRef.current()

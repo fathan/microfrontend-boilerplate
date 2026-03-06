@@ -10,8 +10,8 @@ const router = createBrowserRouter([
     element: <CmsLayout />,
     children: [
       { index: true, element: <DashboardPage /> },
-      { path: "react-app", element: <ReactPage /> },
-      { path: "vue-app", element: <VuePage /> },
+      { path: "react-app/*", element: <ReactPage /> },
+      { path: "vue-app/*", element: <VuePage /> },
     ],
   },
 ]);
